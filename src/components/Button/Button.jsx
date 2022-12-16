@@ -1,9 +1,9 @@
 import './Button.scss';
 
-function Button({ className, icon, title, rounded }) {
-    const classes = `btn ${rounded ? 'rounded' : ''} ${className ? className : ''}`;
+function Button({ className, icon, title, rounded, noTitle, onClick }) {
+    const classes = `btn ${rounded ? 'rounded' : ''} ${className ? className : ''} ${noTitle ? 'no-title' : ''}`;
     return (
-        <button className={classes}>
+        <button onClick={onClick} className={classes}>
             <span className="btn-icon">{icon}</span>
             <span className="btn-title">{title}</span>
         </button>

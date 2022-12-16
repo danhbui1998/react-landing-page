@@ -1,6 +1,8 @@
 @import '../../scss/variables.scss';
 
 .btn {
+    display: flex;
+    align-items: center;
     min-width: 100px;
     border: none;
     outline: none;
@@ -13,12 +15,13 @@
     background-color: $color-main;
     padding: 15px 30px;
     &-icon {
+        font-size: 18px;
         margin-right: 5px;
+    }
+    &.no-title .btn-icon {
+        margin-right: unset;
     }
     &.rounded {
         border-radius: 99px;
-    }
-    span {
-        font-size: 16px;
     }
 }

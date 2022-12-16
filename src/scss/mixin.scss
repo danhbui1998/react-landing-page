@@ -1,0 +1,43 @@
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+$md-min: 1200px; // KHÔNG THAY ĐỔI
+$lg-min: 1600px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop
+
+// large desktop  <=1599ppx
+@mixin lg {
+    @media screen and (max-width: $lg-max) {
+        @content;
+    }
+}
+// desktop <=1199px
+@mixin md {
+    @media screen and (max-width: $md-max) {
+        @content;
+    }
+}
+// tablet <=991px
+@mixin sm {
+    @media screen and (max-width: $sm-max) {
+        @content;
+    }
+}
+// mobile <=767px
+@mixin xs {
+    @media screen and (max-width: $xs-max) {
+        @content;
+    }
+}
+// small mobile <=575px
+@mixin xxs {
+    @media (max-width: $xxs-max) {
+        @content;
+    }
+}

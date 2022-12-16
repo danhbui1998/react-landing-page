@@ -1,8 +1,16 @@
 @import '../../scss/variables.scss';
 @import '../../scss/mixin.scss';
 .header {
-    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: $header-height;
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    transition: all ease 0.4s;
+    background-color: $color-white;
+    @include sm {
+        height: $header-mobile-height;
+    }
     .container {
         height: 100%;
         background-color: $color-white;
@@ -28,25 +36,59 @@
                 a {
                     font-weight: bold;
                     transition: all 0.5s;
+                    &.active {
+                        color: $color-main;
+                    }
                 }
                 a:hover {
                     color: $color-main;
+                }
+            }
+            @include sm {
+                .navbar-list {
+                    display: none;
+                }
+                .navbar-mobile {
+                    position: absolute;
+                    top: $header-mobile-height;
+                    left: 0;
+                    width: 100%;
+                    background-color: $color-main;
+                    flex-direction: column;
+                }
+                .navbar-item {
+                    max-width: 80%;
+                    margin: 0 auto;
+                    padding-left: unset;
+                    padding-right: unset;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    a {
+                        color: $color-white;
+                        &:hover {
+                            color: $color-black;
+                        }
+                        &.active {
+                            color: $color-black;
+                        }
+                    }
                 }
             }
         }
         .header-right {
             display: flex;
             align-items: center;
-            // .btn-login {
-            //     @include responsive_992 {
-            //         display: none;
-            //     }
-            // }
+
             .btn-toggle {
                 display: none;
-                // @include responsive_992 {
-                //     display: block;
-                // }
+            }
+            @include sm {
+                .btn-login {
+                    display: none;
+                }
+                .btn-toggle {
+                    display: block;
+                }
             }
         }
     }

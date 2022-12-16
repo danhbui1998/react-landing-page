@@ -1,12 +1,25 @@
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSignIn } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { faBars, faSignIn, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Link, NavLink } from 'react-router-dom';
 
 import './Header.scss';
 import logo from '../../assets/images/logo.png';
 import { nav } from '../../assets/data/Data';
 import Button from '../Button';
 function Header() {
+    const [isNav, setIsNav] = useState(false);
+    const handleNavbar = () => {
+        setIsNav(!isNav);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                setIsNav(false);
+            }
+        });
+    }, []);
     return (
         <header className="header">
             <div className="container flex">
@@ -14,17 +27,33 @@ function Header() {
                     <img src={logo} alt="logo" />
                 </Link>
                 <nav className="navbar">
-                    <ul className="navbar-list">
+                    <ul className={!isNav ? 'navbar-list' : 'navbar-mobile'}>
                         {nav.map((item, index) => (
                             <li className="navbar-item" key={index}>
-                                <Link to={item.path}>{item.text}</Link>
+                                <NavLink onClick={() => setIsNav(false)} to={item.path}>
+                                    {item.text}
+                                </NavLink>
                             </li>
                         ))}
                     </ul>
                 </nav>
                 <div className="header-right">
                     <Button className="btn-login" icon={<FontAwesomeIcon icon={faSignIn} />} title="Sign in" />
-                    <Button className="btn-toggle" icon={<FontAwesomeIcon icon={faBars} />} />
+                    {!isNav ? (
+                        <Button
+                            noTitle
+                            onClick={handleNavbar}
+                            className="btn-toggle"
+                            icon={<FontAwesomeIcon icon={faBars} />}
+                        />
+                    ) : (
+                        <Button
+                            noTitle
+                            onClick={handleNavbar}
+                            className="btn-toggle"
+                            icon={<FontAwesomeIcon icon={faTimes} />}
+                        />
+                    )}
                 </div>
             </div>
         </header>
