@@ -1,3 +1,4 @@
+@import './scss/mixin.scss';
 .App {
     background-color: #fff;
 }
@@ -5,6 +6,9 @@
 .container {
     max-width: 80%;
     margin: auto;
+    @include xxs {
+        max-width: 90%;
+    }
 }
 .flex {
     display: flex;
@@ -18,4 +22,8 @@ a {
 }
 ul {
     list-style-type: none;
+}
+input {
+    border: none;
+    outline: none;
 }

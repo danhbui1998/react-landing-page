@@ -37,7 +37,7 @@ $lg-max: ($lg-min - 1); // Large Desktop
 }
 // small mobile <=575px
 @mixin xxs {
-    @media (max-width: $xxs-max) {
+    @media screen and (max-width: $xxs-max) {
         @content;
     }
 }
