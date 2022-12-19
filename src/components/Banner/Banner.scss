@@ -26,13 +26,13 @@
         }
         @include sm {
             .heading {
-                width: 80%;
+                width: 90%;
                 h2 {
                     font-size: 50px;
                 }
             }
         }
-        @include xxs {
+        @include xs {
             .heading {
                 h2 {
                     font-size: 40px;

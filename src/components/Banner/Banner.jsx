@@ -3,7 +3,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import './Banner.scss';
 import Button from '../Button';
-import Heading from '../Heading/Heading';
+import Heading from '../Heading';
 
 function Banner() {
     return (
