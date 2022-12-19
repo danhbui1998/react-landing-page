@@ -4,6 +4,13 @@ import featured3 from '../images/hero/h3.png';
 import featured4 from '../images/hero/h4.png';
 import featured5 from '../images/hero/h6.png';
 
+import recent1 from '../images/list/p-1.png';
+import recent2 from '../images/list/p-2.png';
+import recent3 from '../images/list/p-7.png';
+import recent4 from '../images/list/p-4.png';
+import recent5 from '../images/list/p-5.png';
+import recent6 from '../images/list/p-6.png';
+
 export const nav = [
     {
         text: 'home',
@@ -57,10 +64,10 @@ export const featured = [
         total: '80 Property',
     },
 ];
-export const list = [
+export const recents = [
     {
         id: 1,
-        cover: '../images/list/p-1.png',
+        image: recent1,
         name: 'Red Carpet Real Estate',
         location: '210 Zirak Road, Canada',
         category: 'For Rent',
@@ -69,7 +76,7 @@ export const list = [
     },
     {
         id: 2,
-        cover: '../images/list/p-2.png',
+        image: recent2,
         name: 'Fairmount Properties',
         location: '5698 Zirak Road, NewYork',
         category: 'For Sale',
@@ -78,7 +85,7 @@ export const list = [
     },
     {
         id: 3,
-        cover: '../images/list/p-7.png',
+        image: recent3,
         name: 'The Real Estate Corner',
         location: '5624 Mooker Market, USA',
         category: 'For Rent',
@@ -87,7 +94,7 @@ export const list = [
     },
     {
         id: 4,
-        cover: '../images/list/p-4.png',
+        image: recent4,
         name: 'Herringbone Realty',
         location: '5621 Liverpool, London',
         category: 'For Sale',
@@ -96,7 +103,7 @@ export const list = [
     },
     {
         id: 5,
-        cover: '../images/list/p-5.png',
+        image: recent5,
         name: 'Brick Lane Realty',
         location: '210 Montreal Road, Canada',
         category: 'For Rent',
@@ -105,7 +112,7 @@ export const list = [
     },
     {
         id: 6,
-        cover: '../images/list/p-6.png',
+        image: recent6,
         name: 'Banyon Tree Realty',
         location: '210 Zirak Road, Canada',
         category: 'For Sale',
