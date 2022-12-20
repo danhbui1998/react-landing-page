@@ -1,0 +1,75 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+.price {
+    &-card {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &-item {
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        padding: 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .btn-top {
+            margin-bottom: 20px;
+            background-color: #ff6922;
+            font-weight: 500;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 60px;
+            span {
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+        .btn-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .btn-not-active {
+            background-color: $color-white;
+            border: 5px solid #27ae601f;
+            color: $color-main;
+        }
+    }
+    &-menu {
+        margin-top: 40px;
+        li {
+            display: flex;
+            margin-bottom: 20px;
+            label {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #f4f5f7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color-main;
+                margin-right: 10px;
+            }
+        }
+    }
+    @include sm {
+        &-card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @include xs {
+        &-card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
