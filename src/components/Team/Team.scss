@@ -1,0 +1,117 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+.team {
+    background-color: #f7f9fc;
+    &-card {
+        margin-top: 50px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &-item {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: $color-white;
+        border-radius: 6px;
+        border: solid 1px rgb(62 28 131 /10%);
+        padding: 20px;
+        transition: 0.5s;
+        .btn-team {
+            background-color: #ff6922;
+            font-weight: 600;
+        }
+        .details {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .img {
+                width: 90px;
+                height: 90px;
+                position: relative;
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                i {
+                    color: #108be7;
+                    font-size: 17px;
+                    position: absolute;
+                    right: -10px;
+                    top: 35px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -15px;
+                    left: -15px;
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                    border: solid 5px #edf0f5;
+                }
+            }
+            .address {
+                margin-top: 20px;
+                i {
+                    color: $color-grey;
+                }
+                label {
+                    font-size: 14px;
+                    color: #2d3954;
+                    margin-left: 5px;
+                }
+            }
+            h4 {
+                font-weight: 500;
+                margin-top: 10px;
+            }
+            .socials {
+                display: flex;
+                margin-top: 10px;
+                li {
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #f4f5f7;
+                    margin: 0 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-grey;
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            .btn-mess {
+                padding: 10px 20px;
+            }
+            .btn-phone {
+                min-width: 60px;
+                padding: 0px 20px;
+                display: inline-block;
+                background-color: $color-black;
+            }
+        }
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
+    @include sm {
+        &-card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @include xs {
+        &-card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

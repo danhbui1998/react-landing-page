@@ -18,6 +18,13 @@ import location4 from '../images/location/city-4.png';
 import location5 from '../images/location/city-5.png';
 import location6 from '../images/location/city-6.png';
 
+import team1 from '../images/customer/team-1.jpg';
+import team2 from '../images/customer/team-2.jpg';
+import team3 from '../images/customer/team-3.jpg';
+import team4 from '../images/customer/team-4.jpg';
+import team5 from '../images/customer/team-5.jpg';
+import team6 from '../images/customer/team-3.jpg';
+
 export const nav = [
     {
         text: 'home',
@@ -202,7 +209,7 @@ export const location = [
 export const team = [
     {
         list: '50',
-        cover: '../images/customer/team-1.jpg',
+        image: team1,
         address: 'Liverpool, Canada',
         name: 'Sargam S. Singh',
         icon: [
@@ -214,7 +221,7 @@ export const team = [
     },
     {
         list: '70',
-        cover: '../images/customer/team-2.jpg',
+        image: team2,
         address: 'Montreal, Canada',
         name: 'Harijeet M. Siller',
         icon: [
@@ -226,7 +233,7 @@ export const team = [
     },
     {
         list: '80',
-        cover: '../images/customer/team-3.jpg',
+        image: team3,
         address: 'Denever, USA',
         name: 'Anna K. Young',
         icon: [
@@ -238,7 +245,7 @@ export const team = [
     },
     {
         list: '51',
-        cover: '../images/customer/team-4.jpg',
+        image: team4,
         address: '2272 Briarwood Drive',
         name: 'Michael P. Grimaldo',
         icon: [
@@ -250,7 +257,7 @@ export const team = [
     },
     {
         list: '42',
-        cover: '../images/customer/team-5.jpg',
+        image: team5,
         address: '2272 Briarwood Drive',
         name: 'Michael P. Grimaldo',
         icon: [
@@ -262,7 +269,7 @@ export const team = [
     },
     {
         list: '38',
-        cover: '../images/customer/team-5.jpg',
+        image: team6,
         address: 'Montreal, USA',
         name: 'Adam K. Jollio',
         icon: [

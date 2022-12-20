@@ -3,6 +3,7 @@ import Banner from '../../components/Banner';
 import Featured from '../../components/Featured';
 import Location from '../../components/Location';
 import Recent from '../../components/Recent';
+import Team from '../../components/Team';
 import './Home.scss';
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <Recent />
             <Awards />
             <Location />
+            <Team />
         </div>
     );
 }
