@@ -11,6 +11,13 @@ import recent4 from '../images/list/p-4.png';
 import recent5 from '../images/list/p-5.png';
 import recent6 from '../images/list/p-6.png';
 
+import location1 from '../images/location/city-1.png';
+import location2 from '../images/location/city-2.png';
+import location3 from '../images/location/city-3.png';
+import location4 from '../images/location/city-4.png';
+import location5 from '../images/location/city-5.png';
+import location6 from '../images/location/city-6.png';
+
 export const nav = [
     {
         text: 'home',
@@ -149,7 +156,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: '10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-1.png',
+        image: location1,
     },
     {
         id: 2,
@@ -157,7 +164,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: '10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-2.png',
+        image: location2,
     },
     {
         id: 3,
@@ -165,7 +172,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: ' 10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-3.png',
+        image: location3,
     },
     {
         id: 4,
@@ -173,7 +180,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: ' 10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-4.png',
+        image: location4,
     },
     {
         id: 5,
@@ -181,7 +188,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: ' 10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-5.png',
+        image: location5,
     },
     {
         id: 6,
@@ -189,7 +196,7 @@ export const location = [
         Villas: '12 Villas',
         Apartments: ' 10 Apartments',
         Offices: '07 Offices',
-        cover: './images/location/city-6.png',
+        image: location6,
     },
 ];
 export const team = [

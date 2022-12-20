@@ -1,6 +1,7 @@
 import Awards from '../../components/Awards';
 import Banner from '../../components/Banner';
 import Featured from '../../components/Featured';
+import Location from '../../components/Location';
 import Recent from '../../components/Recent';
 import './Home.scss';
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
             <Featured />
             <Recent />
             <Awards />
+            <Location />
         </div>
     );
 }
