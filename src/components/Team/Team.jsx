@@ -14,7 +14,7 @@ function Team() {
                 <div className="team-card">
                     {team.map((item, index) => (
                         <div className="team-item" key={index}>
-                            <Button className="btn-team" rounded title={`${item.list} Listings`} />
+                            <Button className="btn-team" noTitle rounded title={`${item.list} Listings`} />
                             <div className="details">
                                 <div className="img">
                                     <img src={item.image} alt={item.name} />

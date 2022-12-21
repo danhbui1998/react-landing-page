@@ -8,7 +8,7 @@ function PriceCard() {
         <div className="price-card">
             {price.map((item, index) => (
                 <div className="price-item" key={index}>
-                    {isPrice && <Button className="btn-top" rounded title="Best Value" />}
+                    {isPrice && <Button className="btn-top" noTitle rounded title="Best Value" />}
                     <h4>{item.plan}</h4>
                     <h3>
                         <span>$</span> {item.price}
@@ -28,6 +28,7 @@ function PriceCard() {
                         }}
                         className={`btn-bottom ${isPrice ? '' : 'btn-not-active'}`}
                         rounded
+                        noTitle
                         title={`Start ${item.plan}`}
                     />
                 </div>

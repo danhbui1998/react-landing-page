@@ -17,7 +17,7 @@ function Contact() {
                             <input type="text" placeholder="Subject" />
                             <textarea cols="30" rows="10"></textarea>
                         </div>
-                        <Button className="btn-submit" title="Submit Request" />
+                        <Button noTitle className="btn-submit" title="Submit Request" />
                     </form>
                 </div>
             </div>
