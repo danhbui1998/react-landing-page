@@ -1,0 +1,65 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+
+.contact {
+    &-main {
+        margin: 50px 0;
+    }
+    &-form {
+        padding: 30px;
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        .btn-submit {
+            font-weight: 600;
+        }
+        h4 {
+            font-weight: 500;
+        }
+    }
+    &-input {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            'name name name email email email'
+            'subject subject subject subject subject subject'
+            'message message message message message message';
+        // grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        input,
+        textarea {
+            overflow: hidden;
+            width: 100%;
+            border: 1px solid rgb(128 128 128 / 20%);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        input {
+            &::placeholder {
+                font-size: 16px;
+            }
+            &:nth-child(1) {
+                grid-area: name;
+            }
+            &:nth-child(2) {
+                grid-area: email;
+            }
+            &:nth-child(3) {
+                grid-area: subject;
+            }
+        }
+        textarea {
+            grid-area: message;
+        }
+    }
+    @include xs {
+        &-input {
+            grid-template-areas:
+                'name name name name name name'
+                'email email email email email email'
+                'subject subject subject subject subject subject'
+                'message message message message message message';
+        }
+    }
+}
