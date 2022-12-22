@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-landing-page/static/css/main.20d19d50.css",
-    "main.js": "/react-landing-page/static/js/main.ead159fa.js",
+    "main.js": "/react-landing-page/static/js/main.4037cb79.js",
     "static/js/787.472117d8.chunk.js": "/react-landing-page/static/js/787.472117d8.chunk.js",
     "static/media/city-5.png": "/react-landing-page/static/media/city-5.58478a3ebd517a9d3292.png",
     "static/media/city-6.png": "/react-landing-page/static/media/city-6.6787fa4802f667037815.png",
@@ -32,11 +32,11 @@
     "static/media/team-5.jpg": "/react-landing-page/static/media/team-5.0f9224bcfdef787503dc.jpg",
     "index.html": "/react-landing-page/index.html",
     "main.20d19d50.css.map": "/react-landing-page/static/css/main.20d19d50.css.map",
-    "main.ead159fa.js.map": "/react-landing-page/static/js/main.ead159fa.js.map",
+    "main.4037cb79.js.map": "/react-landing-page/static/js/main.4037cb79.js.map",
     "787.472117d8.chunk.js.map": "/react-landing-page/static/js/787.472117d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20d19d50.css",
-    "static/js/main.ead159fa.js"
+    "static/js/main.4037cb79.js"
   ]
 }
