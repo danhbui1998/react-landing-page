@@ -8,7 +8,7 @@ function RecentCard() {
     return (
         <div className="recent-card">
             {recents.map((item, index) => (
-                <div className="recent-item">
+                <div className="recent-item" key={index}>
                     <div className="recent-img">
                         <img src={item.image} alt={item.type} />
                     </div>

@@ -5,7 +5,7 @@ function FeaturedCard() {
     return (
         <div className="featured-card">
             {featured.map((item, index) => (
-                <div className="featured-item">
+                <div className="featured-item" key={index}>
                     <img src={item.avatar} alt={item.name} />
                     <h4>{item.name}</h4>
                     <label>{item.total}</label>
