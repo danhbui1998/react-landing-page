@@ -23,14 +23,14 @@ function Header() {
     return (
         <header className="header">
             <div className="container flex">
-                <Link to="/react-landing-page" className="logo">
+                <Link to="/" className="logo">
                     <img src={logo} alt="logo" />
                 </Link>
                 <nav className="navbar">
                     <ul className={!isNav ? 'navbar-list' : 'navbar-mobile'}>
                         {nav.map((item, index) => (
                             <li className="navbar-item" key={index}>
-                                <NavLink onClick={() => setIsNav(false)} end to={`/react-landing-page${item.path}`}>
+                                <NavLink onClick={() => setIsNav(false)} end to={`${item.path}`}>
                                     {item.text}
                                 </NavLink>
                             </li>

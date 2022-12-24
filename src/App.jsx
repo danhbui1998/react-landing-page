@@ -16,12 +16,12 @@ function App() {
         <div className="App">
             <Header />
             <Routes>
-                <Route path="/react-landing-page" exact element={<Home />} />
-                <Route path="/react-landing-page/about" element={<About />} />
-                <Route path="/react-landing-page/services" element={<Services />} />
-                <Route path="/react-landing-page/blog" element={<Blog />} />
-                <Route path="/react-landing-page/pricing" element={<Pricing />} />
-                <Route path="/react-landing-page/contact" element={<Contact />} />
+                <Route path="/" exact element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </div>

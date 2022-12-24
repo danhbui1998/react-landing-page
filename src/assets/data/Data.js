@@ -28,7 +28,7 @@ import team6 from '../images/customer/team-3.jpg';
 export const nav = [
     {
         text: 'home',
-        path: '',
+        path: '/',
     },
     {
         text: 'about',
