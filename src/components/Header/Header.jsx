@@ -12,13 +12,27 @@ function Header() {
     const handleNavbar = () => {
         setIsNav(!isNav);
     };
-
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+    const handleClick = () => {
+        goToTop();
+        setIsNav(false);
+    };
     useEffect(() => {
-        window.addEventListener('resize', () => {
+        const handleResize = () => {
             if (window.innerWidth > 992) {
                 setIsNav(false);
             }
-        });
+        };
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
     return (
         <header className="header">
@@ -30,7 +44,7 @@ function Header() {
                     <ul className={!isNav ? 'navbar-list' : 'navbar-mobile'}>
                         {nav.map((item, index) => (
                             <li className="navbar-item" key={index}>
-                                <NavLink onClick={() => setIsNav(false)} end to={`${item.path}`}>
+                                <NavLink onClick={handleClick} end to={`${item.path}`}>
                                     {item.text}
                                 </NavLink>
                             </li>

@@ -9,11 +9,14 @@ import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
+import ProgressBar from './components/ProgressBar';
+import GoToTop from './components/GoToTop';
 import './App.scss';
 
 function App() {
     return (
         <div className="App">
+            <ProgressBar />
             <Header />
             <Routes>
                 <Route path="/" exact element={<Home />} />
@@ -24,6 +27,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
+            <GoToTop />
         </div>
     );
 }
