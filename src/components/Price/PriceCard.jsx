@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { price } from '../../assets/data/Data';
 import Button from '../Button';
 
 function PriceCard() {
     const [isPrice, setIsPrice] = useState(false);
+    useEffect(() => {});
     return (
         <div className="price-card">
             {price.map((item, index) => (

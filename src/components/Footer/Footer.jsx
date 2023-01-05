@@ -28,7 +28,7 @@ function Footer() {
                             </p>
                             <div className="subscribe">
                                 <input type="text" placeholder="Email Address" />
-                                <Button className="btn-subscribe" title="Subscibe" />
+                                <Button noTitle className="btn-subscribe" title="Subscibe" />
                             </div>
                         </div>
                         {footer.map((item, index) => (

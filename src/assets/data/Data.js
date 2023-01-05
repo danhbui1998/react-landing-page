@@ -25,6 +25,10 @@ import team4 from '../images/customer/team-4.jpg';
 import team5 from '../images/customer/team-5.jpg';
 import team6 from '../images/customer/team-3.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faHeart, faLightbulb, faTrophy, faCheck, faX } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 export const nav = [
     {
         text: 'home',
@@ -136,22 +140,22 @@ export const recents = [
 ];
 export const awards = [
     {
-        icon: <i className="fa-solid fa-trophy"></i>,
+        icon: <FontAwesomeIcon icon={faTrophy} />,
         num: '32 M	',
         name: 'Blue Burmin Award',
     },
     {
-        icon: <i className="fa-solid fa-briefcase"></i>,
+        icon: <FontAwesomeIcon icon={faBriefcase} />,
         num: '43 M',
         name: 'Mimo X11 Award',
     },
     {
-        icon: <i className="fa-solid fa-lightbulb"></i>,
+        icon: <FontAwesomeIcon icon={faLightbulb} />,
         num: '51 M',
         name: 'Australian UGC Award',
     },
     {
-        icon: <i className="fa-solid fa-heart"></i>,
+        icon: <FontAwesomeIcon icon={faHeart} />,
         num: '42 M',
         name: 'IITCA Green Award',
     },
@@ -213,10 +217,10 @@ export const team = [
         address: 'Liverpool, Canada',
         name: 'Sargam S. Singh',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
     {
@@ -225,10 +229,10 @@ export const team = [
         address: 'Montreal, Canada',
         name: 'Harijeet M. Siller',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
     {
@@ -237,10 +241,10 @@ export const team = [
         address: 'Denever, USA',
         name: 'Anna K. Young',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
     {
@@ -249,10 +253,10 @@ export const team = [
         address: '2272 Briarwood Drive',
         name: 'Michael P. Grimaldo',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
     {
@@ -261,10 +265,10 @@ export const team = [
         address: '2272 Briarwood Drive',
         name: 'Michael P. Grimaldo',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
     {
@@ -273,10 +277,10 @@ export const team = [
         address: 'Montreal, USA',
         name: 'Adam K. Jollio',
         icon: [
-            <i className="fa-brands fa-facebook-f"></i>,
-            <i className="fa-brands fa-linkedin"></i>,
-            <i className="fa-brands fa-twitter"></i>,
-            <i className="fa-brands fa-instagram"></i>,
+            <FontAwesomeIcon icon={faFacebookF} />,
+            <FontAwesomeIcon icon={faLinkedin} />,
+            <FontAwesomeIcon icon={faTwitter} />,
+            <FontAwesomeIcon icon={faInstagram} />,
         ],
     },
 ];
@@ -287,19 +291,21 @@ export const price = [
         ptext: 'per user, per month',
         list: [
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
                 text: '99.5% Uptime Guarantee',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '120GB CDN Bandwidth',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '5GB Cloud Storage',
             },
-            { change: 'color', icon: <i className="fa-solid fa-x"></i>, text: 'Personal Help Support' },
-            { change: 'color', icon: <i className="fa-solid fa-x"></i>, text: 'Enterprise SLA' },
+            { change: 'color', icon: <FontAwesomeIcon icon={faX} />, text: 'Personal Help Support' },
+            { change: 'color', icon: <FontAwesomeIcon icon={faX} />, text: 'Enterprise SLA' },
         ],
     },
     {
@@ -309,24 +315,28 @@ export const price = [
         ptext: 'per user, per month',
         list: [
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '99.5% Uptime Guarantee',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '150GB CDN Bandwidth',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '10GB Cloud Storage',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: 'Personal Help Support',
             },
             {
                 change: 'color',
-                icon: <i className="fa-solid fa-x"></i>,
+                icon: <FontAwesomeIcon icon={faX} />,
                 text: 'Enterprise SLA',
             },
         ],
@@ -337,23 +347,28 @@ export const price = [
         ptext: '2 user, per month',
         list: [
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '100% Uptime Guarantee',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '200GB CDN Bandwidth',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: '20GB Cloud Storage',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: 'Personal Help Support',
             },
             {
-                icon: <i className="fa-solid fa-check"></i>,
+                icon: <FontAwesomeIcon icon={faCheck} />,
+
                 text: 'Enterprise SLA',
             },
         ],

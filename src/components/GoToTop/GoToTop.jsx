@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+
 import './GoToTop.scss';
 
 function GoToTop() {
@@ -31,7 +34,7 @@ function GoToTop() {
         <>
             {showGoToTop && (
                 <div className="totop" onClick={goToTop}>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <FontAwesomeIcon icon={faChevronUp} />
                 </div>
             )}
         </>

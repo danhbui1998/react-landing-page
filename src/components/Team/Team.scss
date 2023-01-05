@@ -37,7 +37,7 @@
                     height: 100%;
                     object-fit: cover;
                 }
-                i {
+                .check-icon {
                     color: #108be7;
                     font-size: 17px;
                     position: absolute;
@@ -57,7 +57,7 @@
             }
             .address {
                 margin-top: 20px;
-                i {
+                &-icon {
                     color: $color-grey;
                 }
                 label {

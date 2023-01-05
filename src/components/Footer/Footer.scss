@@ -80,19 +80,22 @@
                     color: $color-grey;
                 }
                 .subscribe {
+                    height: 49px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     input {
                         background-color: $color-white;
                         border-radius: 5px;
-                        padding: 17px;
+                        padding-left: 17px;
+                        height: 100%;
                         width: 100%;
                         &::placeholder {
                             font-size: 16px;
                         }
                     }
                     .btn-subscribe {
+                        height: 100%;
                         justify-content: center;
                         font-weight: 500;
                     }

@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck, faEnvelope, faLocationDot, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+
 import Heading from '../Heading';
 import './Team.scss';
 import { team } from '../../assets/data/Data';
@@ -18,10 +21,10 @@ function Team() {
                             <div className="details">
                                 <div className="img">
                                     <img src={item.image} alt={item.name} />
-                                    <i className="fa fa-circle-check"></i>
+                                    <FontAwesomeIcon icon={faCircleCheck} className="check-icon" />
                                 </div>
                                 <div className="address">
-                                    <i className="fa fa-location-dot"></i>
+                                    <FontAwesomeIcon icon={faLocationDot} className="address-icon" />
                                     <label>{item.address}</label>
                                 </div>
                                 <h4>{item.name}</h4>
@@ -34,10 +37,10 @@ function Team() {
                             <div className="contact">
                                 <Button
                                     className="btn-mess"
-                                    icon={<i className="fa fa-envelope"></i>}
+                                    icon={<FontAwesomeIcon icon={faEnvelope} />}
                                     title="Message"
                                 />
-                                <Button className="btn-phone" icon={<i className="fa fa-phone-alt"></i>} />
+                                <Button className="btn-phone" icon={<FontAwesomeIcon icon={faPhoneAlt} />} />
                             </div>
                         </div>
                     ))}
